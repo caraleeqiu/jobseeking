@@ -42,7 +42,7 @@ cp config/profile.example.yaml config/profile.yaml
 python main.py tailor jobs/acme.md
 ```
 
-3. 结果写到 `output/acme-tailored.md`，包含：匹配度、范围契合判断、优势、差距+补法、定制简历要点（中英）、求职信（中英）。
+3. 结果写到当天归档目录 `output/daily/<日期>/02-tailored/acme-tailored.md`，包含：匹配度、范围契合判断、优势、差距+补法、定制简历要点（中英）、求职信（中英）。
 
 ### 腿 B：给某个创始人写触达
 
@@ -53,7 +53,7 @@ python main.py tailor jobs/acme.md
 python main.py outreach companies/acme.md
 ```
 
-3. 结果写到 `output/acme-outreach.md`，包含：切入点、痛点假设、为什么是你、邮件（含 3 个标题，中英）、LinkedIn DM（中英）。
+3. 结果写到 `output/daily/<日期>/03-applications/outreach/acme-outreach.md`，包含：切入点、痛点假设、为什么是你、邮件（含 3 个标题，中英）、LinkedIn DM（中英）。
 
 > 默认会**联网检索**公司近期动态（融资/发布/创始人动态）并自动引用，让触达更有杀伤力。
 > 不想联网就加 `--no-research`：
@@ -70,9 +70,21 @@ main.py                 命令行入口（tailor / outreach）
 config/profile.yaml     你的画像（简历 + 求职范围偏好）← 改这里
 jobs/*.md               你要投的 JD（一个岗位一个文件）
 companies/*.md          你研究的公司/创始人信息
-output/*.md             生成的报告
+output/daily/<日期>/    按天归档的产出（见下）
 src/                    程序逻辑（一般不用动）
 ```
+
+### 日度归档
+
+每次 `tailor` / `outreach` 自动按当天日期落到 `output/daily/<YYYY-MM-DD>/`：
+
+```
+01-job-scan/      工作轮训：summary.md（岗位摘要）+ jds/（完整 JD）
+02-tailored/      简历自定义结果
+03-applications/  投递结果：tracker.md（JD+简历+邮件+状态 串在一起）+ outreach/（触达文案）
+```
+
+可用 `--date 2026-05-30` 指定归档到某一天。`output/` 含个人数据，已被 `.gitignore`。
 
 ---
 

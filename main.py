@@ -9,6 +9,7 @@
 """
 
 import argparse
+import datetime
 import pathlib
 import re
 import sys
@@ -17,6 +18,11 @@ from src import outreach, render, tailor
 from src.profile import load_profile
 
 OUTPUT_DIR = pathlib.Path("output")
+
+# 按日期归档的三个子目录
+CAT_JOB_SCAN = "01-job-scan"      # 工作轮训：摘要 + 完整 JD
+CAT_TAILORED = "02-tailored"      # 简历自定义结果
+CAT_APPLICATIONS = "03-applications"  # 投递结果：触达文案 + 追踪表
 
 
 def _slug(path: str) -> str:
@@ -34,9 +40,16 @@ def _read(path: str) -> str:
     return text
 
 
-def _write(slug: str, suffix: str, content: str) -> pathlib.Path:
-    OUTPUT_DIR.mkdir(exist_ok=True)
-    out = OUTPUT_DIR / f"{slug}-{suffix}.md"
+def _daily_dir(category: str, date: str | None = None) -> pathlib.Path:
+    """返回 output/daily/<日期>/<分类>/，不存在则创建。"""
+    day = date or datetime.date.today().isoformat()
+    d = OUTPUT_DIR / "daily" / day / category
+    d.mkdir(parents=True, exist_ok=True)
+    return d
+
+
+def _write(category: str, slug: str, suffix: str, content: str, date=None) -> pathlib.Path:
+    out = _daily_dir(category, date) / f"{slug}-{suffix}.md"
     out.write_text(content, encoding="utf-8")
     return out
 
@@ -47,7 +60,7 @@ def cmd_tailor(args):
     print("🔍 正在分析岗位并定制简历……", file=sys.stderr)
     result = tailor.run(jd, profile)
     md = render.render_tailor(result, _slug(args.input))
-    out = _write(_slug(args.input), "tailored", md)
+    out = _write(CAT_TAILORED, _slug(args.input), "tailored", md, args.date)
     print(f"✅ 已生成：{out}  （匹配度 {result.match_score}/100）")
 
 
@@ -61,7 +74,7 @@ def cmd_outreach(args):
     print("✍️  正在撰写创始人触达……", file=sys.stderr)
     result = outreach.run(notes, profile, research_brief=brief)
     md = render.render_outreach(result, _slug(args.input))
-    out = _write(_slug(args.input), "outreach", md)
+    out = _write(CAT_APPLICATIONS, _slug(args.input), "outreach", md, args.date)
     print(f"✅ 已生成：{out}")
 
 
@@ -71,6 +84,7 @@ def main():
 
     p_tailor = sub.add_parser("tailor", help="JD → 匹配度 + 定制简历 + 求职信")
     p_tailor.add_argument("input", help="JD 文件路径，例如 jobs/example-job.md")
+    p_tailor.add_argument("--date", help="归档日期 YYYY-MM-DD，默认今天", default=None)
     p_tailor.set_defaults(func=cmd_tailor)
 
     p_out = sub.add_parser("outreach", help="公司+创始人信息 → 个性化触达")
@@ -81,6 +95,7 @@ def main():
         action="store_false",
         help="关闭联网检索，只用你手填的信息",
     )
+    p_out.add_argument("--date", help="归档日期 YYYY-MM-DD，默认今天", default=None)
     p_out.set_defaults(func=cmd_outreach, research=True)
 
     args = parser.parse_args()
