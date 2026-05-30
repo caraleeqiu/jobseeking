@@ -1,0 +1,19 @@
+# 你的真实简历/个人信息，绝不上传
+config/profile.yaml
+
+# 你抓取/粘贴的真实岗位（如含敏感内容）
+jobs/*.md
+!jobs/example-job.md
+
+# 生成的定制简历和求职信
+output/*
+!output/.gitkeep
+
+# 密钥
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
