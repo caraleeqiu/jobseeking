@@ -26,7 +26,39 @@ Rules:
 """
 
 
-def run(company_notes: str, profile: dict) -> OutreachResult:
+RESEARCH_QUERY = """\
+Research this company and founder for a personalized cold outreach. Find facts
+from roughly the last 6-12 months that a candidate could authentically
+reference: recent funding rounds, product launches, market/geo expansion,
+notable hires, and the founder's public posts or background. Return a short
+bulleted brief with sources/links. If you cannot verify something, omit it —
+do not guess.
+
+Here is what the candidate already knows:
+{notes}
+"""
+
+
+def research_company(company_notes: str) -> str:
+    """联网补充公司近期动态；失败则返回空串（不影响主流程）。"""
+    import sys
+
+    try:
+        brief = llm.research(RESEARCH_QUERY.format(notes=company_notes))
+        if brief:
+            print("   （已联网补充公司近期动态）", file=sys.stderr)
+        return brief
+    except Exception as e:  # 网络/权限问题不应让整个流程挂掉
+        print(f"   （联网检索跳过：{e}）", file=sys.stderr)
+        return ""
+
+
+def run(company_notes: str, profile: dict, research_brief: str = "") -> OutreachResult:
     system = build_system(profile, TASK)
     user = f"COMPANY & FOUNDER NOTES:\n\n{company_notes}"
+    if research_brief:
+        user += (
+            "\n\nWEB-RESEARCHED FACTS (verified online; use these too, but still "
+            "do NOT invent anything beyond them):\n\n" + research_brief
+        )
     return llm.generate(system, user, OutreachResult)

@@ -30,6 +30,32 @@ def client() -> anthropic.Anthropic:
     return _client
 
 
+def research(query: str, max_tokens: int = 4000) -> str:
+    """联网检索公司/创始人近期动态，返回一段事实摘要（纯文本）。
+
+    用 Claude 的服务端 web_search 工具；处理 pause_turn 续跑。
+    失败时由调用方兜底（这里不抛网络异常给用户看）。
+    """
+    tools = [{"type": "web_search_20260209", "name": "web_search"}]
+    messages = [{"role": "user", "content": query}]
+    chunks: list[str] = []
+    for _ in range(5):  # 服务端工具可能 pause_turn，最多续 5 次
+        resp = client().messages.create(
+            model=MODEL,
+            max_tokens=max_tokens,
+            tools=tools,
+            messages=messages,
+        )
+        for block in resp.content:
+            if block.type == "text":
+                chunks.append(block.text)
+        if resp.stop_reason == "pause_turn":
+            messages.append({"role": "assistant", "content": resp.content})
+            continue
+        break
+    return "\n".join(chunks).strip()
+
+
 def generate(system_blocks: list[dict], user_text: str, schema, max_tokens: int = 16000):
     """跑一次结构化生成，返回 schema 类型的实例。"""
     resp = client().messages.parse(

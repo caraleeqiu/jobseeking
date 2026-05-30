@@ -55,6 +55,10 @@ python main.py outreach companies/acme.md
 
 3. 结果写到 `output/acme-outreach.md`，包含：切入点、痛点假设、为什么是你、邮件（含 3 个标题，中英）、LinkedIn DM（中英）。
 
+> 默认会**联网检索**公司近期动态（融资/发布/创始人动态）并自动引用，让触达更有杀伤力。
+> 不想联网就加 `--no-research`：
+> `python main.py outreach companies/acme.md --no-research`
+
 先拿仓库里自带的 `jobs/example-job.md` 和 `companies/example-company.md` 试跑，感受一下输出。
 
 ---
@@ -82,5 +86,5 @@ src/                    程序逻辑（一般不用动）
 ## 路线图（后续可加）
 
 - 岗位聚合抓取（多渠道）+ 自动打分排序看板
-- 创始人触达接入 web 检索，自动引用公司最新动态
+- ~~创始人触达接入 web 检索，自动引用公司最新动态~~ ✅ 已完成（默认开启）
 - 投递追踪看板（待投/已投/面试/拒信）

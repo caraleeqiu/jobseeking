@@ -54,8 +54,12 @@ def cmd_tailor(args):
 def cmd_outreach(args):
     profile = load_profile()
     notes = _read(args.input)
+    brief = ""
+    if args.research:
+        print("🌐 正在联网检索公司近期动态……", file=sys.stderr)
+        brief = outreach.research_company(notes)
     print("✍️  正在撰写创始人触达……", file=sys.stderr)
-    result = outreach.run(notes, profile)
+    result = outreach.run(notes, profile, research_brief=brief)
     md = render.render_outreach(result, _slug(args.input))
     out = _write(_slug(args.input), "outreach", md)
     print(f"✅ 已生成：{out}")
@@ -71,7 +75,13 @@ def main():
 
     p_out = sub.add_parser("outreach", help="公司+创始人信息 → 个性化触达")
     p_out.add_argument("input", help="公司信息文件路径，例如 companies/example-company.md")
-    p_out.set_defaults(func=cmd_outreach)
+    p_out.add_argument(
+        "--no-research",
+        dest="research",
+        action="store_false",
+        help="关闭联网检索，只用你手填的信息",
+    )
+    p_out.set_defaults(func=cmd_outreach, research=True)
 
     args = parser.parse_args()
     args.func(args)
