@@ -6,7 +6,7 @@
 - **腿 A · 岗位定制**：粘一段 JD → 匹配度打分 + 针对性简历要点 + 求职信
 - **腿 B · 创始人触达**：公司+创始人信息 → 个性化 cold outreach（邮件 + LinkedIn DM）
 
-底层用 Claude（Opus 4.8）。你**基本不用碰代码**：改一个画像文件、把 JD/公司信息粘进文本文件、跑一行命令即可。
+底层用 Google Gemini（默认 gemini-2.5-flash）。你**基本不用碰代码**：改一个画像文件、把 JD/公司信息粘进文本文件、跑一行命令即可。
 
 ---
 
@@ -18,8 +18,8 @@ pip install -r requirements.txt
 
 # 2. 配置 API Key
 cp .env.example .env
-#    然后编辑 .env，填入你的 Anthropic API Key
-#    Key 获取地址：https://console.anthropic.com/settings/keys
+#    然后编辑 .env，填入你的 Google (Gemini) API Key
+#    Key 获取地址：https://aistudio.google.com/apikey
 
 # 3. 配置你的画像
 cp config/profile.example.yaml config/profile.yaml
@@ -81,7 +81,7 @@ src/                    程序逻辑（一般不用动）
 - **半自动，不无人值守**：机器负责搜集、打分、起草，**最后由你确认提交**——更安全、更高质量。
 - **不编造**：所有简历要点、数字都只来自你的画像；公司信息只用你提供的。
 - **打分含范围过滤**：匹配度会同时考虑你的 stage / 职能 / 地区 / remote 偏好，明显不合适的会被点出来并打低分。
-- **省钱**：你的画像走 prompt 缓存，反复处理多个岗位时复用，命中后会在终端提示。
+- **省钱**：默认用 gemini-2.5-flash；画像作为稳定前缀，Gemini 2.5 会隐式缓存复用。要更高质量可在 `.env` 设 `GEMINI_MODEL=gemini-2.5-pro`。
 
 ## 路线图（后续可加）
 

@@ -34,18 +34,15 @@ def _profile_text(profile: dict) -> str:
     return yaml.safe_dump(profile, allow_unicode=True, sort_keys=False)
 
 
-def build_system(profile: dict, task_instructions: str) -> list[dict]:
-    """返回 system 块列表：人设 + 画像 + 任务说明，最后一块打缓存断点。"""
-    return [
-        {"type": "text", "text": PERSONA},
-        {
-            "type": "text",
-            "text": "CANDIDATE PROFILE (authoritative source of truth):\n\n"
-            + _profile_text(profile),
-        },
-        {
-            "type": "text",
-            "text": task_instructions,
-            "cache_control": {"type": "ephemeral"},
-        },
-    ]
+def build_system(profile: dict, task_instructions: str) -> str:
+    """拼成 system instruction：人设 + 画像 + 任务说明。
+
+    画像稳定且较大，Gemini 2.5 会对重复前缀做隐式缓存，多个岗位连跑能省。
+    """
+    return (
+        PERSONA
+        + "\n\nCANDIDATE PROFILE (authoritative source of truth):\n\n"
+        + _profile_text(profile)
+        + "\n\n"
+        + task_instructions
+    )
