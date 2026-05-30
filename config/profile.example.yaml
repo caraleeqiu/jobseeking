@@ -1,0 +1,52 @@
+# =============================================================
+# 画像模板 —— 复制为 config/profile.yaml 后填入你自己的信息
+# config/profile.yaml 已被 .gitignore，不会上传，放心填真实内容
+# =============================================================
+
+basics:
+  name: Your Name
+  email: you@example.com
+  phone: "+1 555-000-0000"
+  languages:
+    - English (Fluent)
+
+headline: >-
+  One-line positioning, e.g. "Founding Marketer, 8 yrs, 0-to-1 growth".
+
+summary: >-
+  A short paragraph summarizing who you are and your strongest proof points.
+
+experience:
+  - company: Company Name
+    title: Your Title
+    location: City, Country
+    dates: Jan 2022 – Present
+    focus: One line on scope / themes
+    highlights:
+      - Achievement with a number (e.g. grew ARR 0 -> $1M in 6 months).
+      - Another quantified achievement.
+
+education:
+  - University — Degree, Years
+
+skills:
+  - Skill one
+  - Skill two
+
+# 求职范围偏好 —— 用于匹配打分 + 过滤
+preferences:
+  target_functions:
+    - Founding Marketing
+  company_stage: Startups, Series A and beyond
+  geos:
+    - United States
+    - Remote
+  work_mode:
+    - Remote
+    - Hybrid
+  outreach_preference: >-
+    Prefer reaching out to founders directly.
+  differentiators:
+    - What makes you hard to replace
+  dealbreakers:
+    - What you will not take

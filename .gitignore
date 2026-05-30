@@ -5,6 +5,10 @@ config/profile.yaml
 jobs/*.md
 !jobs/example-job.md
 
+# 你研究的真实公司/创始人信息
+companies/*.md
+!companies/example-company.md
+
 # 生成的定制简历和求职信
 output/*
 !output/.gitkeep

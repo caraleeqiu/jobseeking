@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+"""求职 Copilot —— 命令行入口。
+
+用法：
+  python main.py tailor   jobs/example-job.md
+  python main.py outreach companies/example-company.md
+
+产出会写到 output/ 目录下的同名 .md 文件，并在终端打印路径。
+"""
+
+import argparse
+import pathlib
+import re
+import sys
+
+from src import outreach, render, tailor
+from src.profile import load_profile
+
+OUTPUT_DIR = pathlib.Path("output")
+
+
+def _slug(path: str) -> str:
+    stem = pathlib.Path(path).stem
+    return re.sub(r"[^a-zA-Z0-9_-]+", "-", stem).strip("-") or "result"
+
+
+def _read(path: str) -> str:
+    p = pathlib.Path(path)
+    if not p.exists():
+        sys.exit(f"❌ 找不到输入文件：{path}")
+    text = p.read_text(encoding="utf-8").strip()
+    if not text:
+        sys.exit(f"❌ 输入文件是空的：{path}")
+    return text
+
+
+def _write(slug: str, suffix: str, content: str) -> pathlib.Path:
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    out = OUTPUT_DIR / f"{slug}-{suffix}.md"
+    out.write_text(content, encoding="utf-8")
+    return out
+
+
+def cmd_tailor(args):
+    profile = load_profile()
+    jd = _read(args.input)
+    print("🔍 正在分析岗位并定制简历……", file=sys.stderr)
+    result = tailor.run(jd, profile)
+    md = render.render_tailor(result, _slug(args.input))
+    out = _write(_slug(args.input), "tailored", md)
+    print(f"✅ 已生成：{out}  （匹配度 {result.match_score}/100）")
+
+
+def cmd_outreach(args):
+    profile = load_profile()
+    notes = _read(args.input)
+    print("✍️  正在撰写创始人触达……", file=sys.stderr)
+    result = outreach.run(notes, profile)
+    md = render.render_outreach(result, _slug(args.input))
+    out = _write(_slug(args.input), "outreach", md)
+    print(f"✅ 已生成：{out}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="求职 Copilot：岗位定制 + 创始人触达")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    p_tailor = sub.add_parser("tailor", help="JD → 匹配度 + 定制简历 + 求职信")
+    p_tailor.add_argument("input", help="JD 文件路径，例如 jobs/example-job.md")
+    p_tailor.set_defaults(func=cmd_tailor)
+
+    p_out = sub.add_parser("outreach", help="公司+创始人信息 → 个性化触达")
+    p_out.add_argument("input", help="公司信息文件路径，例如 companies/example-company.md")
+    p_out.set_defaults(func=cmd_outreach)
+
+    args = parser.parse_args()
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()
