@@ -23,6 +23,13 @@ MARKETING_KEYWORDS = [
     "gtm", "go-to-market", "partnerships", "影响", "增长", "营销", "运营",
 ]
 
+# 负向过滤：标题命中这些则排除（工程/设计/招聘/销售等，虽带 growth 等词但不是 mkt 岗）
+EXCLUDE_KEYWORDS = [
+    "engineer", "designer", "developer", "recruiter", "sourcer", "intern",
+    "account executive", "compliance", "data scientist", "analyst",
+    "software", "swe", "design engineer",
+]
+
 
 def _get(url: str, timeout: int = 15) -> dict | None:
     try:
@@ -35,6 +42,8 @@ def _get(url: str, timeout: int = 15) -> dict | None:
 
 def _is_marketing(title: str) -> bool:
     t = title.lower()
+    if any(k in t for k in EXCLUDE_KEYWORDS):
+        return False
     return any(k in t for k in MARKETING_KEYWORDS)
 
 
