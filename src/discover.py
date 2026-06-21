@@ -1,71 +1,52 @@
 """岗位发现 / 推送 —— 第三条腿。
 
-给定候选人画像，联网搜符合赛道+偏好的真实在招岗位，
-用画像打分排序，输出一份可直接看的岗位推送清单。
+从真实招聘板（Greenhouse / Ashby）拉 100% 真实在招的 marketing/growth 岗位，
+再用候选人画像逐个打分排序，输出可直接看、链接可点的推送清单。
 
-流程：
-1. research()：用 Google Search grounding 联网捞一批真实公司/岗位线索（纯文本）。
-2. generate()：把线索 + 画像喂给模型，结构化成打分排序的 JobDiscovery。
+数据源是真岗位，不会幻觉公司或链接。公司清单见 config/companies.yaml。
 """
 
-from . import llm
+from . import jobsource, llm
 from .models import JobDiscovery
 from .profile import build_system
 
-# 联网检索的提示词：让 grounding 去捞真实、在招、对口的岗位
-SEARCH_QUERY = """\
-Find REAL, currently-open job postings (2026) that fit this candidate.
-
-Candidate in one line: {headline}
-Target functions: {functions}
-Sectors: do NOT restrict to any single vertical. Cast a wide net across tech —
-AI products of all kinds, consumer apps, SaaS, fintech, e-commerce, marketplaces,
-creator/economy, education, etc. — wherever a strong growth/marketing leader fits.
-Lightly favour AI-forward companies and teams with overseas/global expansion
-(including Chinese-founded teams going global, e.g. ex-ByteDance / TikTok lineage),
-but include any strong-fit growth/marketing role regardless of vertical.
-Preferred: startups Series A+, remote or remote-friendly, founder-reachable.
-
-Extra focus from the user this run: {focus}
-
-For each opportunity, find: company, role title, what they do, location/remote policy,
-founder or team background, and how to apply (careers page, LinkedIn, or founder DM).
-Prefer companies actively hiring growth/marketing. Return concrete names and URLs,
-not generic advice. Aim for 8-12 distinct, real opportunities.
-"""
-
 TASK = """\
-TASK: From the web-research notes below, produce a ranked job-discovery list for the candidate.
+TASK: Score and rank the REAL job postings below for this candidate.
 
-Rules:
-- Only include REAL companies named in the notes. Do NOT invent companies or roles.
-- Do NOT penalise a role just because it is not in AI video/image. Sector is open;
-  score primarily on growth/marketing fit + scope preferences (stage, function, geo,
-  work-mode, dealbreakers). A great growth role in any vertical can score high.
-- Score each 0-100 on fit, factoring BOTH skill match AND the candidate's scope
-  preferences (stage, function, geo, work-mode, dealbreakers in the profile).
-- Be honest in visa_geo_flag: if a role is US-onsite or needs work authorization the
-  candidate may lack, say so. Remote/relocation-friendly or Chinese-team roles → 'none'.
-- Sort leads by match_score descending.
-- how_to_apply must be specific and actionable for THIS candidate.
+You are given a list of currently-open jobs pulled directly from company career
+boards (each has a real company, role, location, and URL). For each one:
+- Set company, role, location, source_url EXACTLY from the data given. Never change
+  the URL or invent one.
+- Score match_score 0-100 on fit: growth/marketing skill match AND the candidate's
+  scope preferences (stage, function, geo, work-mode, dealbreakers in the profile).
+  Sector is open — don't penalise a role for its vertical; judge the growth/marketing fit.
+- why_relevant: one sharp line on why it fits (or doesn't) this candidate.
+- founder_or_team: only if you genuinely know it, else 'unknown'.
+- how_to_apply: specific and actionable (apply via the URL; add 'also DM founder on
+  LinkedIn' when it's a small/early team worth a direct approach).
+- visa_geo_flag: honest flag if the location implies onsite/work-authorization risk
+  for this candidate; remote/remote-friendly → 'none'.
+Sort leads by match_score descending. Include every job given (don't drop any).
 """
 
 
-def run(profile: dict, focus: str = "") -> JobDiscovery:
-    system = build_system(profile, TASK)
-    headline = profile.get("headline", "Growth / founding marketing leader, AI products")
-    prefs = profile.get("preferences", {})
-    functions = ", ".join(prefs.get("target_functions", ["Growth Marketing"]))
+def run(profile: dict, focus: str = "", limit: int = 30) -> JobDiscovery:
+    real_jobs = jobsource.fetch_all()
+    if not real_jobs:
+        # 数据源为空（网络/清单问题）时，返回空结果而不是幻觉
+        return JobDiscovery(leads=[], summary="未从招聘板拉到岗位，请检查网络或 config/companies.yaml。")
+    # 一次打分太多会超 token；截断到 limit 个（公司轮流取，保证多样性）
+    real_jobs = real_jobs[:limit]
 
-    notes = llm.research(
-        SEARCH_QUERY.format(
-            headline=headline,
-            functions=functions,
-            focus=focus or "(none — use the full target list)",
-        )
-    )
+    lines = [
+        f"{i}. company={j['company']} | role={j['role']} | location={j['location']} | url={j['url']}"
+        for i, j in enumerate(real_jobs, 1)
+    ]
+    focus_note = f"\n\nExtra emphasis this run: {focus}" if focus else ""
     user = (
-        "WEB-RESEARCH NOTES (real companies/roles found online):\n\n"
-        + (notes or "(research returned empty; rely on nothing and return an empty list)")
+        "REAL OPEN JOBS (pulled from company career boards — use these exactly):\n\n"
+        + "\n".join(lines)
+        + focus_note
     )
-    return llm.generate(system, user, JobDiscovery)
+    system = build_system(profile, TASK)
+    return llm.generate(system, user, JobDiscovery, max_output_tokens=24000)
