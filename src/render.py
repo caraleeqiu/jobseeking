@@ -1,6 +1,6 @@
 """把结构化结果渲染成易读的 Markdown 报告。"""
 
-from src.models import OutreachResult, TailorResult
+from src.models import JobDiscovery, OutreachResult, TailorResult
 
 
 def _bullets(items: list[str]) -> str:
@@ -49,6 +49,32 @@ def render_tailor(r: TailorResult, source: str) -> str:
 
 ### 求职信 (中文)
 {r.cover_letter_cn}
+"""
+
+
+def render_discover(r: JobDiscovery, date: str) -> str:
+    rows = []
+    for i, lead in enumerate(sorted(r.leads, key=lambda x: x.match_score, reverse=True), 1):
+        bar = "🟢" if lead.match_score >= 75 else "🟡" if lead.match_score >= 50 else "🔴"
+        flag = "" if lead.visa_geo_flag.lower() in ("none", "", "unknown") else f" ⚠️{lead.visa_geo_flag}"
+        rows.append(
+            f"### {i}. {bar} {lead.match_score} · {lead.company} — {lead.role}\n"
+            f"- **为什么对口**：{lead.why_relevant}\n"
+            f"- **地点/远程**：{lead.location}{flag}\n"
+            f"- **团队**：{lead.founder_or_team}\n"
+            f"- **怎么投**：{lead.how_to_apply}\n"
+            f"- **链接**：{lead.source_url}\n"
+        )
+    body = "\n".join(rows)
+    return f"""# 岗位推送 · {date}
+
+{r.summary}
+
+> 🟢≥75 强投 · 🟡50-74 可投 · 🔴<50 跳过；⚠️ 标身份/地点风险。链接以公司官方招聘页为准。
+
+---
+
+{body}
 """
 
 

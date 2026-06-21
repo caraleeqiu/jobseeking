@@ -14,7 +14,7 @@ import pathlib
 import re
 import sys
 
-from src import outreach, render, tailor
+from src import discover, outreach, render, tailor
 from src.profile import load_profile
 
 OUTPUT_DIR = pathlib.Path("output")
@@ -78,9 +78,25 @@ def cmd_outreach(args):
     print(f"✅ 已生成：{out}")
 
 
+def cmd_discover(args):
+    profile = load_profile()
+    print("🛰️  正在联网搜对口岗位并打分排序……", file=sys.stderr)
+    result = discover.run(profile, focus=args.focus or "")
+    day = args.date or datetime.date.today().isoformat()
+    md = render.render_discover(result, day)
+    out = _write(CAT_JOB_SCAN, "job-push", "推送", md, args.date)
+    strong = sum(1 for x in result.leads if x.match_score >= 75)
+    print(f"✅ 已生成：{out}  （{len(result.leads)} 个岗位，{strong} 个强投）")
+
+
 def main():
-    parser = argparse.ArgumentParser(description="求职 Copilot：岗位定制 + 创始人触达")
+    parser = argparse.ArgumentParser(description="求职 Copilot：岗位发现 + 定制 + 触达")
     sub = parser.add_subparsers(dest="command", required=True)
+
+    p_disc = sub.add_parser("discover", help="联网搜对口岗位 → 打分排序的推送清单")
+    p_disc.add_argument("focus", nargs="?", default="", help="可选：这次重点找什么，例如 'AI 视频 远程' 或 '华人创始'")
+    p_disc.add_argument("--date", help="归档日期 YYYY-MM-DD，默认今天", default=None)
+    p_disc.set_defaults(func=cmd_discover)
 
     p_tailor = sub.add_parser("tailor", help="JD → 匹配度 + 定制简历 + 求职信")
     p_tailor.add_argument("input", help="JD 文件路径，例如 jobs/example-job.md")

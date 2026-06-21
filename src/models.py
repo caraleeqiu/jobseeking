@@ -43,3 +43,22 @@ class OutreachResult(BaseModel):
     email_cn: str = Field(description="Cold outreach email, Chinese")
     linkedin_dm_en: str = Field(description="Short LinkedIn DM (<60 words), English")
     linkedin_dm_cn: str = Field(description="Short LinkedIn DM, Chinese")
+
+
+# ---------- 岗位发现 / 推送 ----------
+
+class JobLead(BaseModel):
+    company: str = Field(description="Company name")
+    role: str = Field(description="Job title / role")
+    why_relevant: str = Field(description="One line: why this fits the candidate's track and target")
+    location: str = Field(description="Location / remote policy if known, else 'unknown'")
+    founder_or_team: str = Field(description="Founder/team background if notable (e.g. ex-ByteDance, Chinese team), else 'unknown'")
+    how_to_apply: str = Field(description="Best channel: official careers page, LinkedIn, X DM founder, email — be specific")
+    source_url: str = Field(description="A URL to the company careers page or job, else 'unknown'")
+    match_score: int = Field(description="0-100 fit score vs the candidate's profile AND scope preferences")
+    visa_geo_flag: str = Field(description="Honest flag on work-authorization / location risk for this candidate, else 'none'")
+
+
+class JobDiscovery(BaseModel):
+    leads: list[JobLead] = Field(description="Job leads, sorted by match_score descending")
+    summary: str = Field(description="2-3 line summary of this batch and what to prioritize")
