@@ -37,3 +37,14 @@ ashby:
   # —— 其他高增长创业 ——
   - linear          # 研发工具
   - ramp            # fintech
+  # —— YC / 近期热门 AI 创业 ——
+  - exa             # AI 搜索 API
+  - decagon         # AI 客服 agent
+  - sierra          # AI agent（Bret Taylor）
+  - cognition       # AI 编程（Devin）
+  - baseten         # AI 推理基础设施
+  - vapi            # 语音 AI
+  - mintlify        # AI 文档
+  - browserbase     # AI 浏览器基础设施
+  - julius          # AI 数据分析
+  - hyperbound      # AI 销售陪练
