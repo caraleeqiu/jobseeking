@@ -5,12 +5,18 @@
 # - Greenhouse: 看招聘页 URL 里的 board token
 #     boards.greenhouse.io/<token>  →  填 <token>
 # - Ashby: 看 jobs.ashbyhq.com/<name>  →  填 <name>
+# （加完可跑一次 `python -c "from src import jobsource; print(len(jobsource.fetch_all()))"` 验证）
 
 greenhouse:
   - heygen          # AI 视频 avatar（华人创始）
-  - synthesia       # AI 视频 avatar（企业级）
+  - figma           # 设计
+  - discord         # 社交平台
+  - databricks      # 数据/AI
+  - brex            # fintech
+  - airtable        # 协作工具
 
 ashby:
+  # —— AI 视频/影像/创作 ——
   - photoroom       # AI 影像编辑
   - suno            # AI 音乐
   - elevenlabs      # AI 语音/创作者
@@ -20,3 +26,14 @@ ashby:
   - recraft         # AI 设计
   - tavus           # AI 视频 agent
   - ideogram        # AI 图像
+  - runway          # AI 视频
+  - pika            # AI 视频
+  # —— AI 工具 / vibe coding（PLG，远程友好）——
+  - lovable         # AI app builder
+  - cursor          # AI 编程
+  - replit          # AI 编程
+  - gamma           # AI PPT（华裔联创）
+  - perplexity      # AI 搜索
+  # —— 其他高增长创业 ——
+  - linear          # 研发工具
+  - ramp            # fintech
