@@ -18,10 +18,13 @@ Find REAL, currently-open job postings (2026) that fit this candidate.
 
 Candidate in one line: {headline}
 Target functions: {functions}
-Target sectors: AI video / image / creative / companion / music / creator tools /
-AI education, plus consumer AI products with overseas/global expansion.
+Sectors: do NOT restrict to any single vertical. Cast a wide net across tech —
+AI products of all kinds, consumer apps, SaaS, fintech, e-commerce, marketplaces,
+creator/economy, education, etc. — wherever a strong growth/marketing leader fits.
+Lightly favour AI-forward companies and teams with overseas/global expansion
+(including Chinese-founded teams going global, e.g. ex-ByteDance / TikTok lineage),
+but include any strong-fit growth/marketing role regardless of vertical.
 Preferred: startups Series A+, remote or remote-friendly, founder-reachable.
-Also surface Chinese-founded teams going global (ex-ByteDance / TikTok / CapCut lineage).
 
 Extra focus from the user this run: {focus}
 
@@ -36,6 +39,9 @@ TASK: From the web-research notes below, produce a ranked job-discovery list for
 
 Rules:
 - Only include REAL companies named in the notes. Do NOT invent companies or roles.
+- Do NOT penalise a role just because it is not in AI video/image. Sector is open;
+  score primarily on growth/marketing fit + scope preferences (stage, function, geo,
+  work-mode, dealbreakers). A great growth role in any vertical can score high.
 - Score each 0-100 on fit, factoring BOTH skill match AND the candidate's scope
   preferences (stage, function, geo, work-mode, dealbreakers in the profile).
 - Be honest in visa_geo_flag: if a role is US-onsite or needs work authorization the
