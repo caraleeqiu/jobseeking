@@ -14,6 +14,9 @@ greenhouse:
   - databricks      # 数据/AI
   - brex            # fintech
   - airtable        # 协作工具
+  - anthropic       # AI 大厂（Claude）
+  - xai             # AI 大厂（xAI/Grok）
+  - scaleai         # AI 数据
 
 ashby:
   # —— AI 视频/影像/创作 ——
@@ -34,6 +37,17 @@ ashby:
   - replit          # AI 编程
   - gamma           # AI PPT（华裔联创）
   - perplexity      # AI 搜索
+  # —— AI 大厂 ——
+  - openai          # AI 大厂（ChatGPT）
+  - cohere          # AI 大厂（企业 LLM）
+  # —— AI 3D ——
+  - meshy           # AI 3D 生成
+  # —— 企业 AI agent / AI 员工 ——
+  - harvey          # 法律 AI
+  - abridge         # 医疗 AI
+  - synthflow       # 语音 AI agent
+  - rilla           # 销售 AI
+  - attio           # AI CRM
   # —— 其他高增长创业 ——
   - linear          # 研发工具
   - ramp            # fintech
