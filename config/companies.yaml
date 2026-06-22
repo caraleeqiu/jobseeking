@@ -22,6 +22,10 @@ greenhouse:
   - lyft            # 出行
   - instacart       # 到家配送
   - faire           # B2B 批发 marketplace
+  # —— 蓝领用工/到家服务（对口你"蓝领营销 Agent"经历）——
+  - instawork       # 蓝领零工平台
+  - gusto           # 中小企业薪酬/HR
+  - taskrabbit      # 到家服务
 
 ashby:
   # —— AI 视频/影像/创作 ——
@@ -57,6 +61,10 @@ ashby:
   - notion          # 生产力工具
   - linear          # 研发工具
   - ramp            # fintech
+  # —— 蓝领/到家服务（Ashby）——
+  - thumbtack       # 到家服务 marketplace
+  - angi            # 到家服务（原 Angie's List）
+  - jobber          # 蓝领服务商工具
   # —— YC / 近期热门 AI 创业 ——
   - exa             # AI 搜索 API
   - decagon         # AI 客服 agent
