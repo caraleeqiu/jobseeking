@@ -17,6 +17,11 @@ greenhouse:
   - anthropic       # AI 大厂（Claude）
   - xai             # AI 大厂（xAI/Grok）
   - scaleai         # AI 数据
+  # —— 本地生活/出行/到家/marketplace（对口你滴滴+饿了么）——
+  - airbnb          # 民宿/出行
+  - lyft            # 出行
+  - instacart       # 到家配送
+  - faire           # B2B 批发 marketplace
 
 ashby:
   # —— AI 视频/影像/创作 ——
