@@ -21,3 +21,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# 临时工作目录（会话内脚本/中间产物）
+scratchpad/
