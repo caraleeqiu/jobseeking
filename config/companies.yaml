@@ -17,6 +17,9 @@ greenhouse:
   - anthropic       # AI 大厂（Claude）
   - xai             # AI 大厂（xAI/Grok）
   - scaleai         # AI 数据
+  # —— 澳洲科技/独角兽（本地岗，不用 relocate）——
+  - cultureamp      # 澳洲 HR/员工体验
+  - eucalyptus      # 澳洲健康科技（Head of Product Growth）
   # —— 本地生活/出行/到家/marketplace（对口你滴滴+饿了么）——
   - airbnb          # 民宿/出行
   - lyft            # 出行
@@ -78,6 +81,7 @@ ashby:
   - hyperbound      # AI 销售陪练
   # —— 近期热门早期创业 ——
   - mercor          # AI 人才数据（Senior Growth Lead）
+  - airwallex       # 澳洲金融科技独角兽（Head of Commercial Growth）
   - cartesia        # 语音 AI
   - langchain       # AI agent 框架
   - n8n             # 工作流自动化
