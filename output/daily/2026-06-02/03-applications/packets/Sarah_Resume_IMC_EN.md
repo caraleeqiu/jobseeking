@@ -17,7 +17,7 @@ cara.liquanqiu@gmail.com
 *Overseas Integrated Marketing (IMC) · Influencer & Community · AI consumer products · 0-to-1*
 
 **A new incubated product (under NDA)**
-- Owned the product definition, external PR and press outreach, and brand narrative — setting the messaging and orchestrating the overseas integrated-marketing (IMC) strategy end-to-end.
+- Owned the product definition, overseas brand narrative, and external messaging.
 - Led influencer seeding + referral loops: via an account matrix and seed users, drove influencer seeding and word-of-mouth referral to scale seed users, funneling them into a Discord community as a lasting brand asset.
 - Recruited core users and KOC creators to co-create ad creative, then amplified the winners with paid spend — closing a content → community → paid loop.
 
@@ -42,7 +42,7 @@ cara.liquanqiu@gmail.com
 - **IMC funnel (RoboNeo as the representative case):** product definition → external PR → influencer seeding / referral via account matrix + seed users → Discord community → KOC co-created ad creative → paid amplification, driving cold start and scale.
 - **Channel mix:** overseas social (Twitter/X, LinkedIn, TikTok) + Reddit / Discord communities + influencer partnerships (incl. CPS / affiliate) + brand collaborations + account matrix + EDM, plus China content ecosystems (Xiaohongshu, Douyin), unifying one brand narrative across channels.
 - **AI-native ops:** built an automation pipeline on OpenClaw for data review, account-matrix selection + content creation, SEO keyword analysis, and landing-page generation & deployment.
-- **Outcomes:** RoboNeo hit #1 on category charts in 10+ countries (app) and RMB 3M gross profit (web); Vmake reached USD 500K gross profit in ~1 year; MVLAND reached USD 500K ARR in 4 months.
+- **Outcomes:** RoboNeo hit #1 on category charts in 10+ countries and #1 on Brazil's overall chart (app), plus RMB 3M gross profit (web); Vmake reached USD 500K gross profit in ~1 year; MVLAND reached USD 500K ARR in 4 months.
 - **Process metrics:** Reddit 2,000 karma in 2 weeks driving steady organic traffic; EDM open rate 20%; a Xiaohongshu topic +200% traffic in one month; influencer channel high-AOV with ~7% paid-conversion vs. sign-up; Meta Day-0 ROAS up to 1.9.
 
 **ByteDance | Senior Strategy Manager | Dec 2020 – Jun 2023**
@@ -59,10 +59,11 @@ cara.liquanqiu@gmail.com
 *Supply-Side Growth · Merchant Acquisition · Market Share Expansion*
 - Drove merchant-side supply growth across a two-sided marketplace; managed a RMB 10 million subsidy program across 15+ provinces, increasing merchant count by 4.5% and raising national market share by 12%.
 
-**DiDi | Senior Growth Manager | Melbourne / Tokyo / Latin America | Jan 2017 – Dec 2018**
-*International Market Growth · Supply-Side Growth · Market Entry*
-- Led market entry across four countries (Australia, New Zealand, Mexico, Japan) and built the Latin American customer-service system from 0 to 1 (COPC certified).
-- Increased driver supply by 30% while keeping subsidy 3.5% below competitors; built a supply-side growth-tracking system (GMV, margin, subsidy KPIs).
+**DiDi | Regional Operations Manager | Melbourne / Tokyo / Latin America | Jan 2017 – Dec 2018**
+*Regional Operations · Customer-Service System Build · Driver-Side Growth*
+- Led the rollout of the customer-service product across Australia/New Zealand, Brazil, and Mexico.
+- Built the full customer-service system for Spanish-speaking markets end-to-end — vendor selection, staff training, and performance evaluation.
+- Drove driver-side operations and penetration growth across Australia and New Zealand.
 
 **Accenture | Senior Business Analyst | Apr 2013 – Dec 2016**
 *Market Entry & Growth · Strategic Planning · Digital Transformation*
