@@ -45,6 +45,10 @@ cara.liquanqiu@gmail.com
 - **Outcomes:** RoboNeo hit #1 on category charts in 10+ countries and #1 on Brazil's overall chart (app), plus RMB 3M gross profit (web); Vmake reached USD 500K gross profit in ~1 year; MVLAND reached USD 500K ARR in 4 months.
 - **Process metrics:** Reddit 2,000 karma in 2 weeks driving steady organic traffic; EDM open rate 20%; a Xiaohongshu topic +200% traffic in one month; influencer channel high-AOV with ~7% paid-conversion vs. sign-up; Meta Day-0 ROAS up to 1.9.
 
+**AI Creative System (viral-video deconstruction & reconstruction · AI Product Manager)**
+- Led the build of an AI system that deconstructs and reconstructs winning ad videos, solving the overseas ad team's pain (each creative took 2 hours by hand, too slow for a 3-day creative-refresh cadence): defined the product path (deconstruct → slot replacement → shot editing → video output) and a dual-mode architecture (fixed workflow + Agent-driven node canvas); designed a four-layer semantic architecture, a three-layer Agent loop, and 15+ meta-prompt templates, shipping a FastAPI / Next.js prototype with a QA checklist and human-in-the-loop iteration.
+- Outcome: through connected pipelines and a controllable architecture, freed ~80% of manual effort and let the team process many creatives in parallel, supporting high-frequency ad delivery.
+
 **ByteDance | Senior Strategy Manager | Dec 2020 – Jun 2023**
 *Product Growth · AI Innovation · Investment Management*
 - Led AI product innovation for TikTok's mental-wellness initiative, reaching 100,000+ users and improving retention.
@@ -68,6 +72,11 @@ cara.liquanqiu@gmail.com
 **Accenture | Senior Business Analyst | Apr 2013 – Dec 2016**
 *Market Entry & Growth · Strategic Planning · Digital Transformation*
 - Led market-entry and expansion projects for enterprise clients (China Post, China Resources), delivering strategic roadmaps.
+
+## SIDE PROJECT
+**US Blue-Collar Local Marketing Creative Agent (LocalAd Studio) | Independent build · Claude Code · 2026**
+- Built an AI creative-production agent for US blue-collar / home-service local advertising (plumbing, HVAC, cleaning, moving): deconstruct winning local-service ads → slot replacement (city / service / season) → shot & copy editing → composited output; four-layer semantic architecture + identity anchors / asset slots + multi-layer production orchestration (gate approvals, A/B variants, editable nodes) + 15+ meta-prompt templates, prototyped on Claude Code + FastAPI / Next.js.
+- Outcome: lifted creative output from ~8 pieces per person per day to hour-level batch production, freeing ~80% of manual effort and supporting high-frequency local-ad creative needs across many cities and services.
 
 ## EDUCATION
 The University of Melbourne | Master of Information Systems (Minor in Finance) | 2010 – 2012
