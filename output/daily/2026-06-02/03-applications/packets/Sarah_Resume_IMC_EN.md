@@ -18,6 +18,7 @@ cara.liquanqiu@gmail.com
 
 **A new incubated product (under NDA)**
 - Owned the product definition, overseas brand narrative, and external messaging.
+- Built the user-operations engine: led Reddit-community needs discovery and a closed feedback loop — via paid promotion, posts, and a purpose-built subreddit — building a seed-user community that turned users into product co-creators and acquiring the first 100 seed users at low cost.
 - Led influencer seeding + referral loops: via an account matrix and seed users, drove influencer seeding and word-of-mouth referral to scale seed users, funneling them into a Discord community as a lasting brand asset.
 - Recruited core users and KOC creators to co-create ad creative, then amplified the winners with paid spend — closing a content → community → paid loop.
 
@@ -38,10 +39,10 @@ cara.liquanqiu@gmail.com
 - Reported directly to the CPO on overseas strategy and positioning; built a company-level imaging map — an automated system monitoring market share, user scenarios, and usage habits across the design, video, and image verticals (app + web), by country and competitor — surfacing new-track and opportunity insights for six business units; and led due diligence, post-investment management, and synergy strategy for investments / M&A including Zcool.
 
 **Operations Lead (owned revenue targets + overseas IMC)**
-- Led full-stack operations and overseas integrated marketing for three overseas / global AI products (Vmake, RoboNeo, MVLAND); personally carried the revenue target.
-- **IMC funnel (RoboNeo as the representative case):** product definition → external PR → influencer seeding / referral via account matrix + seed users → Discord community → KOC co-created ad creative → paid amplification, driving cold start and scale.
-- **Channel mix:** overseas social (Twitter/X, LinkedIn, TikTok) + Reddit / Discord communities + influencer partnerships (incl. CPS / affiliate) + brand collaborations + account matrix + EDM, plus China content ecosystems (Xiaohongshu, Douyin), unifying one brand narrative across channels.
-- **AI-native ops:** built an automation pipeline on OpenClaw for data review, account-matrix selection + content creation, SEO keyword analysis, and landing-page generation & deployment.
+- Led full-stack operations and overseas integrated marketing for three AI products — Vmake (overseas), RoboNeo (overseas), and MVLAND (global) — personally carrying the revenue target and building a ~4-person AI-native team per product for fast decision-making.
+- **Integrated (IMC) motion (RoboNeo as the case):** starting from product definition and selling-point sharpening, ran external PR and tech-media outreach to build awareness; used an account matrix + seed users to run influencer seeding and word-of-mouth referral to scale seed users; funneled them into a Discord community as a lasting brand asset; then recruited core users and KOCs to co-create ad creative and amplified with paid — a full loop from cold start to scale.
+- **Channel mix:** orchestrated overseas social (Twitter/X, LinkedIn, TikTok), Reddit / Discord communities, influencer partnerships (incl. CPS / affiliate), brand collaborations, account matrices, and EDM, plus the China ecosystems of Xiaohongshu and Douyin — carrying one unified brand narrative across every channel for cross-channel amplification.
+- **AI-native ops:** built an automation growth pipeline on OpenClaw covering automated data review, account-matrix selection and content creation, SEO keyword analysis, and landing-page build & launch, driving high output-per-head for a lean team.
 - **Outcomes:** RoboNeo hit #1 on category charts in 10+ countries and #1 on Brazil's overall chart (app), plus RMB 3M gross profit (web); Vmake reached USD 500K gross profit in ~1 year; MVLAND reached USD 500K ARR in 4 months.
 - **Process metrics:** Reddit 2,000 karma in 2 weeks driving steady organic traffic; EDM open rate 20%; a Xiaohongshu topic +200% traffic in one month; influencer channel high-AOV with ~7% paid-conversion vs. sign-up; Meta Day-0 ROAS up to 1.9.
 
