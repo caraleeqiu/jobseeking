@@ -13,7 +13,7 @@ cara.liquanqiu@gmail.com
 
 ## WORK EXPERIENCE
 
-**PlawLogic | Head of Growth & Operations | Sep 2025 – Present**
+**PawLogic | Head of Growth & Operations | Sep 2025 – Present**
 *Multi-market paid acquisition · Creative testing · AI automation · 0-to-1*
 - Owned end-to-end paid acquisition for three subscription AI products across Google (Search + PMax) and Meta — campaign setup, audience and bidding strategy, budget pacing, daily optimization to cost-per-acquisition targets, and QA — taking Drama.Land to USD 1M ARR in 4 months.
 - Built and ran a structured creative-testing framework — testing hook × angle × format one variable at a time, validating intent on sign-ups before scaling, killing losers and doubling down on winners weekly — and a clear diagnostic order (ROAS → cost-per-purchase → CTR/thumb-stop → CVR) to know exactly what to fix.

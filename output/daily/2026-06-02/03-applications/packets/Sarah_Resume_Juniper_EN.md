@@ -13,7 +13,7 @@ cara.liquanqiu@gmail.com
 
 ## WORK EXPERIENCE
 
-**PlawLogic | Head of Growth & Operations | Sep 2025 – Present**
+**PawLogic | Head of Growth & Operations | Sep 2025 – Present**
 *Lifecycle, retention & LTV · Experimentation · AI consumer products · 0-to-1*
 - Owns the growth, lifecycle, and monetization strategy for three early-stage AI products (Nooka, Drama.Land, iLands), reporting directly to the founders, setting the roadmap and KPIs, and owning the revenue and LTV outcomes end-to-end.
 - Built the full onboarding-to-paid lifecycle and a stage-by-stage diagnostic framework (sign-up → first project → export → paywall trigger → purchase) that pinpoints where customers drop and which fixes move the needle most.

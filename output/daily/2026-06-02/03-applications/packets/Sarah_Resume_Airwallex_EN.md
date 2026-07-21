@@ -13,7 +13,7 @@ cara.liquanqiu@gmail.com
 
 ## WORK EXPERIENCE
 
-**PlawLogic | Head of Growth & Operations | Sep 2025 – Present**
+**PawLogic | Head of Growth & Operations | Sep 2025 – Present**
 *Integrated campaigns · Growth & lifecycle · AI consumer products · 0-to-1*
 - Owns the growth and go-to-market strategy for three early-stage AI products (Nooka, Drama.Land, iLands), reporting to the founders, setting objectives and KPIs, and owning the revenue number end-to-end.
 - Plans and executes integrated launch campaigns across paid (Google, Meta), owned (landing pages, email/CRM), and earned (PR, influencer seeding, community) channels — building account matrices, activating seed users, funneling them into a Discord community, and recruiting KOC creators to co-create and amplify creative.

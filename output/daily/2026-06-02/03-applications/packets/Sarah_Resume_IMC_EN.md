@@ -13,8 +13,8 @@ cara.liquanqiu@gmail.com
 
 ## WORK EXPERIENCE
 
-**PlawLogic | Head of Growth & Operations | Sep 2025 – Present**
-*Overseas Integrated Marketing (IMC) · Influencer & Community · AI consumer products · 0-to-1*
+**PawLogic | Head of Growth & Operations | Sep 2025 – Present**
+*Consultant-to-full-time · Overseas Integrated Marketing (IMC) · Influencer & Community · AI consumer products · 0-to-1*
 
 **A new incubated product (under NDA)**
 - Owned the product definition, overseas brand narrative, and external messaging.
