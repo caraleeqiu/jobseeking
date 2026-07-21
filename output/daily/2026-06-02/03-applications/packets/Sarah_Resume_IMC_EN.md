@@ -56,7 +56,8 @@ cara.liquanqiu@gmail.com
 **ByteDance | Senior Strategy Manager | Dec 2020 – Jun 2023**
 *Product Growth · AI Innovation · Investment Management*
 - Led AI product innovation for TikTok's mental-wellness initiative, reaching 100,000+ users and improving retention.
-- Managed an RMB 20 million investment fund, leading sourcing, investment, and post-investment management for AI health & safety and cutting-edge medical projects; built 0-to-1 the onboarding, training, and content-distribution system for charities/NGOs on a philanthropy platform.
+- Managed an RMB 20 million investment fund, leading sourcing, investment, and post-investment management for AI health & safety and cutting-edge medical projects.
+- Built, from 0 to 1, the onboarding, training, and content-distribution system for charities/NGOs on a philanthropy platform, and drove global feature launches and ESG alignment.
 
 **New Oriental | Head of Business Analytics | Oct 2019 – Nov 2020**
 *User Growth · Acquisition & Conversion · Multi-platform Operations*
