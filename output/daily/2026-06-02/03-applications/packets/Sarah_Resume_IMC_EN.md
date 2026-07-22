@@ -32,9 +32,11 @@ cara.liquanqiu@gmail.com
 - Product operations: led onboarding-to-paid A/B testing, bucketing traffic across landing-page variants to find the best landing page and paywall-trigger mechanism per scenario, lifting paid-conversion rate.
 - Results: reached USD 1M ARR four months after launch, established a stable and repeatable ad-creative style, and completed negotiations with five bespoke monthly-retainer service clients.
 
-**Across products**
-- Built the full onboarding-to-paid conversion funnel and ran three focused optimization sprints on performance, pricing, and landing-page conversion: cut performance-related complaints by 30%, improved pricing gross margin by 10%, and lifted tool landing-page conversion by 20%.
-- Built an AI-native growth pipeline on Claude Code / OpenClaw: keyword research, batch landing-page generation, ad creative & content, automated data review, and account-matrix management — turning one-off experiments into reusable playbooks so a lean team ships fast.
+**Ops infrastructure**
+*Built lightweight internal tools to raise the team's operating efficiency*
+
+- Ad-strategy analysis: built an automated marketing pipeline with Claude Code / OpenClaw, covering competitor selling-point mining → ad-angle distillation → creative pipeline production → landing-page generation → data review.
+- Complaint-automation loop: defined a complaint-triage SOP and partnered with engineering to ship the monitoring → triage → SOP-handling flow, closing the loop on customer-complaint automation.
 
 **Meitu | Head of Innovation Operations Center | Jun 2023 – May 2026**
 *Overseas Integrated Marketing (IMC) · Full-Stack Product Operations · AI-Native Team Building*
