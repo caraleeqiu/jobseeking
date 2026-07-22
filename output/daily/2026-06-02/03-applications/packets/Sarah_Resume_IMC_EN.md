@@ -76,9 +76,11 @@ cara.liquanqiu@gmail.com
 - Foundation relations: managed an executive's personal philanthropic fund, leading sourcing, investment, and post-investment management for AI health & safety and frontier-medical projects — landing three education projects and completing the sourcing and industry–academia partnership for one medical project.
 
 **New Oriental | Head of Business Analytics | Oct 2019 – Nov 2020**
-*User Growth · Acquisition & Conversion · Multi-platform Operations*
-- Orchestrated growth across user, teacher, and sales sides, building a full-funnel performance system and lifting conversion rate by 20%.
-- Built a machine-learning user-segmentation model (random forest, 85%+ accuracy) for precise targeting; optimized budget utilization to 80% through forecasting.
+*Business analytics for K-12 online education (left due to China's "Double Reduction" policy)*
+
+- Business analytics: built the online-education business-analytics system from 0 to 1, leading a 5-person team to deliver reporting for C-level, director, and strategy-lead audiences — covering business performance, staff efficiency, and transaction efficiency — to monitor and diagnose the full funnel from acquisition to renewal.
+- Strategy design: built user-segmentation and teacher-segmentation models to optimize three-way matching across students, learning advisors, and teachers, lifting attendance, course-completion, and renewal rates.
+- Results: delivered a 20% market-share gain and a 10% lift in paid conversion.
 
 **Alibaba (Ele.me) | Business Analytics Manager | Jan 2019 – Sep 2019**
 *Supply-Side Growth · Merchant Acquisition · Market Share Expansion*
