@@ -89,10 +89,10 @@ cara.liquanqiu@gmail.com
 - Strategy design: piloting in advantage regions such as Nanjing, designed SMB and KA acquisition strategies — lifting KA / SMB merchant penetration through merchant selection, negotiation strategy, and kitchen retrofits; optimized the on-platform merchant display strategy, balancing peak and off-peak display and discount tactics to raise off-peak open and conversion rates.
 
 **DiDi | Regional Operations Manager | Melbourne / Tokyo / Latin America | Jan 2017 – Dec 2018**
-*Regional Operations · Customer-Service System Build · Driver-Side Growth*
-- Led the rollout of the customer-service product across Australia/New Zealand, Brazil, and Mexico.
-- Built the full customer-service system for Spanish-speaking markets end-to-end — vendor selection, staff training, and performance evaluation.
-- Drove driver-side operations and penetration growth across Australia and New Zealand.
+*Customer-service product · Regional operations*
+
+- Customer-service product: joined as a customer-service product owner and built DiDi's overseas customer-service system, driving vendor sourcing across Latin America, Australia, and Brazil, and helping establish overseas service centers and the VOC system — improving ticket turnaround efficiency and closure rate.
+- Regional operations: part of the Australia market launch, owned driver-side operations — optimizing supply-demand matching, take-rate, and subsidy strategies to reach 30% driver-side supply penetration.
 
 **Accenture | Senior Business Analyst | Apr 2013 – Dec 2016**
 *Market Entry & Growth · Strategic Planning · Digital Transformation*
