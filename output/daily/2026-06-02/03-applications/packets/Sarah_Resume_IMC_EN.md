@@ -16,10 +16,11 @@ cara.liquanqiu@gmail.com
 *Consultant-to-full-time · Multiple products taken 0-to-1 into Tier-1 markets*
 
 **A new incubated product (under NDA)**
-- Owned the product definition, overseas brand narrative, and external messaging.
-- Built the user-operations engine: led Reddit-community needs discovery and a closed feedback loop — via paid promotion, posts, and a purpose-built subreddit — building a seed-user community that turned users into product co-creators and acquiring the first 100 seed users at low cost.
-- Led influencer seeding + referral loops: via an account matrix and seed users, drove influencer seeding and word-of-mouth referral to scale seed users, funneling them into a Discord community as a lasting brand asset.
-- Recruited core users and KOC creators to co-create ad creative, then amplified the winners with paid spend — closing a content → community → paid loop.
+*Owns product definition, overseas brand narrative, and user growth & retention for an Agent community product*
+
+- Launch communications: since the June launch, fully owned overseas pre-launch communications — coordinating multi-platform official accounts, mega and mid/long-tail influencers, and PR channels — reaching an estimated tens of millions of impressions across the web.
+- Product validation: led seed-user discovery through a Reddit research → posting → comment-reply → paid promotion → Discord DM funnel, acquiring the first 50 users; in parallel, built a Meta creative-testing matrix to validate selling points and formats across audience segments, achieving a US CPI of $3 and Day-1 retention of 30%.
+- UGC loops: combined an account matrix with UGC partnerships — boosting posts and re-editing content — to drive influencer seeding and word-of-mouth referral, scaling seed users and funneling them into a Discord community as a lasting brand asset.
 
 **Drama.Land (AI music video)**
 - Influencer partnerships & attribution: built the 0-to-1 influencer-collaboration system (including CPS / affiliate revenue-share); combined long-tail KOC collaborations with second-edit paid amplification to compute a blended ROAS, pinpointing exactly which creator types and selling points were worth scaling; planned and ran partnerships with million-follower influencers, managing the full path from impressions → private-channel link distribution → download attribution to optimize CPM and blended ROAS.
