@@ -39,19 +39,25 @@ cara.liquanqiu@gmail.com
 - Ad-strategy analysis: built an automated marketing pipeline with Claude Code / OpenClaw, covering competitor selling-point mining → ad-angle distillation → creative pipeline production → landing-page generation → data review.
 - Complaint-automation loop: defined a complaint-triage SOP and partnered with engineering to ship the monitoring → triage → SOP-handling flow, closing the loop on customer-complaint automation.
 
-**Meitu | Head of Innovation Operations Center | Jun 2023 – May 2026**
-*Overseas Integrated Marketing (IMC) · Full-Stack Product Operations · AI-Native Team Building*
+**Meitu | Head of Venture Business Operations | Jun 2023 – May 2026**
+*30% global strategy & analysis · 70% operations for Meitu's innovation products*
 
 **Strategy & Analysis (reporting to the CPO)**
-- Reported directly to the CPO on overseas strategy and positioning; built a company-level imaging map — an automated system monitoring market share, user scenarios, and usage habits across the design, video, and image verticals (app + web), by country and competitor — surfacing new-track and opportunity insights for six business units; and led due diligence, post-investment management, and synergy strategy for investments / M&A including Zcool.
+- Reported directly to the CPO on overseas strategy and market positioning, delivering: ① a company-level imaging map — an automated system monitoring market share, user scenarios, and usage habits across the design, video, and image verticals (app + web), by country and by competitor — surfacing new-track and opportunity insights for six business units; ② product strategy and GTM design for Meitu (Meituxiuxiu), KaiPai, the Innovation BU, and the Meitu Open Platform; ③ due diligence, post-investment management, and synergy strategy for investments / M&A including Zcool.
 
-**Operations Lead (owned revenue targets + overseas IMC)**
-- Led full-stack operations and overseas integrated marketing for three AI products — Vmake (overseas), RoboNeo (overseas), and MVLAND (global) — personally carrying the revenue target and building a ~4-person AI-native team per product for fast decision-making.
-- **Integrated (IMC) motion (RoboNeo as the case):** starting from product definition and selling-point sharpening, ran external PR and tech-media outreach to build awareness; used an account matrix + seed users to run influencer seeding and word-of-mouth referral to scale seed users; funneled them into a Discord community as a lasting brand asset; then recruited core users and KOCs to co-create ad creative and amplified with paid — a full loop from cold start to scale.
-- **Channel mix:** orchestrated overseas social (Twitter/X, LinkedIn, TikTok), Reddit / Discord communities, influencer partnerships (incl. CPS / affiliate), brand collaborations, account matrices, and EDM, plus the China ecosystems of Xiaohongshu and Douyin — carrying one unified brand narrative across every channel for cross-channel amplification.
-- **AI-native ops:** built an automation growth pipeline on OpenClaw covering automated data review, account-matrix selection and content creation, SEO keyword analysis, and landing-page build & launch, driving high output-per-head for a lean team.
-- **Outcomes:** RoboNeo hit #1 on category charts in 10+ countries and #1 on Brazil's overall chart (app), plus RMB 3M gross profit (web); Vmake reached USD 500K gross profit in ~1 year; MVLAND reached USD 500K ARR in 4 months.
-- **Process metrics:** Reddit 2,000 karma in 2 weeks driving steady organic traffic; EDM open rate 20%; a Xiaohongshu topic +200% traffic in one month; influencer channel high-AOV with ~7% paid-conversion vs. sign-up; Meta Day-0 ROAS up to 1.9.
+**Operations Lead (owned revenue targets + overseas go-to-market)**
+- 2024: owned Vmake's product positioning and selling-point distillation, hitting a ~USD 500K ARR target in one year through organic channels (influencer partnerships, affiliate partnerships, and official-account management); in parallel, mined user feedback and ran user research, turning frontline insight into product features and validating their traction in market.
+- 2025: ran operations and overseas integrated marketing for RoboNeo (AI video Agent) and MVLAND (AI music) in parallel, personally carrying the revenue target and building a ~4-person AI-native team per product for fast decision-making. The work covered:
+- Product definition: starting from product definition and core selling-point distillation, produced the full set of external launch materials.
+- Paid advertising: partnered with the central channel team to build the Google and Meta ad stack, testing different selling points and creatives to find high-ROAS angles and formats.
+- Influencer partnerships: ran a mega + UGC hybrid model — mega-influencer exposure, mid/small-creator re-edits, and boosted re-edits — delivering tens of millions of impressions and ~100K daily active users.
+- Community: orchestrated overseas social (Twitter/X, LinkedIn, TikTok) and the Discord community; hosted multiple community challenges that contributed 200+ online templates within two months.
+- SEO: owned the product SEO strategy, supporting product-structure and performance optimization and contributing tool and template designs from an operations perspective to raise the organic-traffic share.
+- EDM: identified potential small-B users within the user base and deployed OpenClaw to provide varied reply templates, lifting open rates and close rates.
+
+**Results**
+- RoboNeo hit #1 on iOS category charts in 10+ countries in 2025, and #1 on Brazil's overall chart.
+- MVLAND became the fastest-growing product by ARR in Meitu's Innovation BU (ARR approaching USD 500K by the time of departure).
 
 **AI Creative System (viral-video deconstruction & reconstruction · Part-Time Product Manager · Dec 2025 – Present)**
 - Background: solved the overseas ad team's creative-production bottleneck — each creative took 2 hours by hand, too slow for the every-3-days refresh cadence, so the team kept missing trend windows and delivery costs rose; owned the build of an AI system to deconstruct and reconstruct winning ad videos so overseas delivery could respond fast to the market.
