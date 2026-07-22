@@ -21,6 +21,7 @@ cara.liquanqiu@gmail.com
 - Launch communications: since the June launch, fully owned overseas pre-launch communications — coordinating multi-platform official accounts, mega and mid/long-tail influencers, and PR channels — reaching an estimated tens of millions of impressions across the web.
 - Product validation: led seed-user discovery through a Reddit research → posting → comment-reply → paid promotion → Discord DM funnel, acquiring the first 50 users; in parallel, built a Meta creative-testing matrix to validate selling points and formats across audience segments, achieving a US CPI of $3 and Day-1 retention of 30%.
 - UGC loops: combined an account matrix with UGC partnerships — boosting posts and re-editing content — to drive influencer seeding and word-of-mouth referral, scaling seed users and funneling them into a Discord community as a lasting brand asset.
+- Results: within two weeks of pre-launch, DAU passed 1,000 with Day-0 retention at 30%; DAU is projected to pass 100K by the end of August.
 
 **Drama.Land (AI music video)**
 *Market lead for this AI music-video Agent product, owning advertising, influencer marketing, SEO, official accounts & community, user feedback, and product operations end-to-end*
