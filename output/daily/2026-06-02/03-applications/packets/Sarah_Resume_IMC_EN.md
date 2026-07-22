@@ -83,8 +83,10 @@ cara.liquanqiu@gmail.com
 - Results: delivered a 20% market-share gain and a 10% lift in paid conversion.
 
 **Alibaba (Ele.me) | Business Analytics Manager | Jan 2019 – Sep 2019**
-*Supply-Side Growth · Merchant Acquisition · Market Share Expansion*
-- Drove merchant-side supply growth across a two-sided marketplace; managed a RMB 10 million subsidy program across 15+ provinces, increasing merchant count by 4.5% and raising national market share by 12%.
+*Nationwide merchant-side strategy and analytics for Ele.me*
+
+- Business analytics: built the nationwide operating system covering merchant-side and sales-side market penetration, transaction performance, and sales-signing efficiency; owned nationwide merchant-side business targets, budget allocation, and sales-incentive design.
+- Strategy design: piloting in advantage regions such as Nanjing, designed SMB and KA acquisition strategies — lifting KA / SMB merchant penetration through merchant selection, negotiation strategy, and kitchen retrofits; optimized the on-platform merchant display strategy, balancing peak and off-peak display and discount tactics to raise off-peak open and conversion rates.
 
 **DiDi | Regional Operations Manager | Melbourne / Tokyo / Latin America | Jan 2017 – Dec 2018**
 *Regional Operations · Customer-Service System Build · Driver-Side Growth*
