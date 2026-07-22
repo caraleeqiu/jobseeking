@@ -95,8 +95,9 @@ cara.liquanqiu@gmail.com
 - Regional operations: part of the Australia market launch, owned driver-side operations — optimizing supply-demand matching, take-rate, and subsidy strategies to reach 30% driver-side supply penetration.
 
 **Accenture | Senior Business Analyst | Apr 2013 – Dec 2016**
-*Market Entry & Growth · Strategic Planning · Digital Transformation*
-- Led market-entry and expansion projects for enterprise clients (China Post, China Resources), delivering strategic roadmaps.
+*Strategy analysis · Digital transformation*
+
+- Strategy analysis: contributed to digital-transformation strategy work for state-owned enterprise clients including China Resources Group and China Post, shaping the organizational and workforce plans for their transformations.
 
 ## SIDE PROJECT
 **US Blue-Collar Local Marketing Creative Agent (LocalAd Studio) | Independent build · Claude Code · 2026**
