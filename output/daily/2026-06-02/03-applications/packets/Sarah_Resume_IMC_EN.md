@@ -23,10 +23,14 @@ cara.liquanqiu@gmail.com
 - UGC loops: combined an account matrix with UGC partnerships — boosting posts and re-editing content — to drive influencer seeding and word-of-mouth referral, scaling seed users and funneling them into a Discord community as a lasting brand asset.
 
 **Drama.Land (AI music video)**
-- Influencer partnerships & attribution: built the 0-to-1 influencer-collaboration system (including CPS / affiliate revenue-share); combined long-tail KOC collaborations with second-edit paid amplification to compute a blended ROAS, pinpointing exactly which creator types and selling points were worth scaling; planned and ran partnerships with million-follower influencers, managing the full path from impressions → private-channel link distribution → download attribution to optimize CPM and blended ROAS.
-- Product & skill tuning: reverse-mined high-value music sub-genre scenarios from user behavior and led skill tuning across five distinct styles; built scenario-based model routing and reverse-engineered the subscription + credit-pack pricing strategy from the gross-margin mix, growing gross margin on the new version.
-- Experimentation & conversion: led onboarding-to-paid A/B testing, bucketing traffic across landing-page variants to find the best landing page and paywall-trigger mechanism per scenario and lift paid-conversion rate.
-- System & result: built the ad-testing & validation SOP and customer-complaint automation, reaching USD 1M ARR in 4 months (Meta Day-0 ROAS above 1, Google Day-0 ROAS 0.7).
+*Market lead for this AI music-video Agent product, owning advertising, influencer marketing, SEO, official accounts & community, user feedback, and product operations end-to-end*
+
+- Product definition: since the February launch, used Reddit research and competitor benchmarking to define the core target audiences, per-audience selling points, marketing channels, and creative formats — and to set user-acquisition channels and budget allocation.
+- Paid advertising: working with vendors, owned strategy, creative testing, and data review across the Google ad stack (Search, PMax) and Meta/TikTok — delivering Google ROAS above 0.3 and Meta ROAS approaching 0.8 in real results.
+- Influencer partnerships: built the 0-to-1 influencer-collaboration system (including CPS / affiliate revenue-share); combined long-tail KOC collaborations with second-edit paid amplification to compute a blended ROAS, pinpointing which creator types and selling points were worth scaling; planned and ran partnerships with million-follower influencers, managing the full path from impressions → private-channel link distribution → download attribution to optimize CPM and blended ROAS.
+- Skill tuning: reverse-mined high-value music sub-genre scenarios from user behavior and led skill tuning across multiple distinct styles; built scenario-based model routing and reverse-engineered the subscription + credit-pack pricing strategy from the gross-margin mix, growing gross margin on the new version.
+- Product operations: led onboarding-to-paid A/B testing, bucketing traffic across landing-page variants to find the best landing page and paywall-trigger mechanism per scenario, lifting paid-conversion rate.
+- Results: reached USD 1M ARR four months after launch, established a stable and repeatable ad-creative style, and completed negotiations with five bespoke monthly-retainer service clients.
 
 **Across products**
 - Built the full onboarding-to-paid conversion funnel and ran three focused optimization sprints on performance, pricing, and landing-page conversion: cut performance-related complaints by 30%, improved pricing gross margin by 10%, and lifted tool landing-page conversion by 20%.
