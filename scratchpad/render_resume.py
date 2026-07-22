@@ -16,7 +16,7 @@ def fix_bullets(md):
 
 CSS = """
 @page { size: A4; margin: 1.4cm 1.5cm; }
-body { font-family: 'WenQuanYi Zen Hei', sans-serif; font-size: 10.5px; line-height: 1.5; color: #1a1a1a; }
+body { font-family: 'Noto Sans CJK SC', 'WenQuanYi Zen Hei', sans-serif; font-size: 10.5px; line-height: 1.5; color: #1a1a1a; }
 h1 { font-size: 22px; margin: 0 0 2px 0; }
 h2 { font-size: 13px; margin: 14px 0 6px 0; padding-bottom: 3px; border-bottom: 1.5px solid #333; }
 h3 { font-size: 11.5px; margin: 8px 0 2px 0; }
