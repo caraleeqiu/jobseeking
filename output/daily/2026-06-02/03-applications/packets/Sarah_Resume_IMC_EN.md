@@ -69,10 +69,11 @@ cara.liquanqiu@gmail.com
 - Outcome: through connected pipelines and a controllable architecture, freed ~40% of manual effort (human fine-tuning is still needed given the "gacha" randomness of AI generation), enabling 60 new creatives shipped per week.
 
 **ByteDance | Senior Strategy Manager | Dec 2020 – Jun 2023**
-*Product Growth · AI Innovation · Investment Management*
-- Led AI product innovation for TikTok's mental-wellness initiative, reaching 100,000+ users and improving retention.
-- Managed an RMB 20 million investment fund, leading sourcing, investment, and post-investment management for AI health & safety and cutting-edge medical projects.
-- Built, from 0 to 1, the onboarding, training, and content-distribution system for charities/NGOs on a philanthropy platform, and drove global feature launches and ESG alignment.
+*Business analytics · Foundation project sourcing & investment management*
+
+- Business analytics: joined in 2020 in a business-analytics role and built a 5-person team covering business analysis for ad monetization and ad review, focused on growing ad revenue and improving review efficiency.
+- CSR initiative: to strengthen ByteDance's CSR record and reduce platform-safety risk on Douyin, led AI product innovation for TikTok's mental-wellness initiative — reaching 100,000+ users with identification, early warning, intervention, and referral for acute psychological risk, and reducing the share of high-risk speech and extreme incidents on the platform.
+- Foundation relations: managed an executive's personal philanthropic fund, leading sourcing, investment, and post-investment management for AI health & safety and frontier-medical projects — landing three education projects and completing the sourcing and industry–academia partnership for one medical project.
 
 **New Oriental | Head of Business Analytics | Oct 2019 – Nov 2020**
 *User Growth · Acquisition & Conversion · Multi-platform Operations*
