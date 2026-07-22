@@ -98,6 +98,7 @@ cara.liquanqiu@gmail.com
 *战略分析 · 数字化转型*
 
 - 战略分析：参与华润集团、中国邮政等央企的数字化转型战略分析工作，制定数字化转型的组织与人员规划。
+- 系统实施：参与 WMS 与销售系统的实施工作，帮助华润集团提升多区域的销售效率与仓储周转效率。
 
 ## Side Project
 **US 蓝领本地营销素材 Agent（LocalAd Studio）｜ 独立开发 · Claude Code · 2026**

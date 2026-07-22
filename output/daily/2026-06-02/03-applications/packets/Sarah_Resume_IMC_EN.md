@@ -98,6 +98,7 @@ cara.liquanqiu@gmail.com
 *Strategy analysis · Digital transformation*
 
 - Strategy analysis: contributed to digital-transformation strategy work for state-owned enterprise clients including China Resources Group and China Post, shaping the organizational and workforce plans for their transformations.
+- System implementation: worked on WMS and sales-system implementations, helping China Resources Group raise sales efficiency and warehouse-turnover efficiency across multiple regions.
 
 ## SIDE PROJECT
 **US Blue-Collar Local Marketing Creative Agent (LocalAd Studio) | Independent build · Claude Code · 2026**
