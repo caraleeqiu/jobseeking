@@ -1,20 +1,19 @@
 # Cara
-**Overseas Integrated Marketing (IMC) · Influencer & Community · Brand Narrative · AI / Consumer Products**
+**Taking AI Apps & Consumer Products Global · Multiple 0-to-1 Product Builds**
 
 cara.liquanqiu@gmail.com
 
 ---
 
 ## PROFESSIONAL SUMMARY
-1. Overseas integrated-marketing (IMC) and growth leader for AI and consumer products, skilled at uniting PR, influencer, social, community, affiliate, and paid media under one brand narrative to take products from a 0-to-1 cold start to scaled growth — with a rare combination of China-market and overseas expertise.
-2. Runs overseas IMC end-to-end: PR and tech-media outreach, influencer seeding + affiliate programs built 0-to-1, social matrix (Twitter/X, LinkedIn, TikTok), Reddit / Discord community, and paid amplification.
-3. Deep understanding of Western-market user behavior, media ecosystems, and the creator economy; ran the same repeatable IMC playbook across multiple products (a new incubated product + Meitu's RoboNeo) with quantifiable results.
-4. AI-native operator who also builds product and writes code: builds automated marketing pipelines with Claude Code / OpenClaw (keyword research, landing-page generation, data review, account-matrix management), and has led AI product design and prototyping — Meitu's viral-video deconstruction & reconstruction system (part-time PM) and an independent side project (a blue-collar local-marketing creative agent) — shipping experiments fast with a lean team.
+1. Multiple products taken 0-to-1 into Tier-1 countries and Latin America; strong in product definition and brand-narrative building, integrating PR, organic (SEO, account matrix, influencer partnerships), paid (Meta/TikTok, Search, PMax), and affiliate (CPS) channels to hit market-growth targets.
+2. An early adopter of the AI-native way of working: builds automated marketing pipelines with Claude Code / OpenClaw (competitor selling-point mining → ad-angle distillation → creative pipeline production → landing-page generation → data review).
+3. Vibe-coding enthusiast who has led AI product design and prototyping — Meitu's viral-video deconstruction & reconstruction system (part-time PM) and an independent side project, a blue-collar local-marketing creative agent — shipping experiments fast with a lean team and leveraging team-level output.
 
 ## WORK EXPERIENCE
 
 **PawLogic | Head of Growth & Operations | Sep 2025 – Present**
-*Consultant-to-full-time · Overseas Integrated Marketing (IMC) · Influencer & Community · AI consumer products · 0-to-1*
+*Consultant-to-full-time · Multiple products taken 0-to-1 into Tier-1 markets*
 
 **A new incubated product (under NDA)**
 - Owned the product definition, overseas brand narrative, and external messaging.
